@@ -1,11 +1,9 @@
-import React from 'react';
-
-export default function ExpenseTable({ expenses }) {
+export default function ExpenseTable({ expenses, onDelete }) {
   return (
     <div className="expense-table-container">
       <h2>Expense List</h2>
       {expenses.length === 0 ? (
-        <p className="no-expenses">No expenses added yet.</p>
+        <p className="no-expenses">No expenses found.</p>
       ) : (
         <table className="expense-table">
           <thead>  
@@ -14,6 +12,7 @@ export default function ExpenseTable({ expenses }) {
               <th>Description</th>
               <th>Amount</th>
               <th>Date</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -23,6 +22,14 @@ export default function ExpenseTable({ expenses }) {
                 <td>{expense.description}</td>
                 <td>${expense.amount.toFixed(2)}</td>
                 <td>{expense.date}</td>
+                <td>
+                  <button 
+                    onClick={() => onDelete(expense.id)}
+                    className="delete-btn"
+                  >
+                    Delete
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
