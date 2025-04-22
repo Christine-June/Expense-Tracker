@@ -11,3 +11,6 @@ A simple React application to track your expenses.
 - Delete expenses
 - Search/filter expenses
 - Responsive design
+
+## 🌐 Live Demo  
+[View deployed app on Vercel](https://vercel.com/christine-junes-projects/expense-tracker)
