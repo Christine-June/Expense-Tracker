@@ -13,4 +13,4 @@ A simple React application to track your expenses.
 - Responsive design
 
 ## 🌐 Live Demo  
-[View deployed app on Vercel](https://vercel.com/christine-junes-projects/expense-tracker)
+[View deployed app on Vercel]([text](https://expense-tracker-theta-sable.vercel.app/))
